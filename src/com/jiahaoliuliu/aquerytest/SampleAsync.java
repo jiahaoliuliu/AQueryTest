@@ -3,13 +3,12 @@ package com.jiahaoliuliu.aquerytest;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.androidquery.AQuery;
 import com.androidquery.callback.AjaxCallback;
 import com.androidquery.callback.AjaxStatus;
 import org.json.JSONObject;
 
-public class AQueryTest extends Activity {
+public class SampleAsync extends Activity {
 
     private TextView textView;
 
@@ -19,7 +18,7 @@ public class AQueryTest extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.sample_async);
 
         textView = (TextView)findViewById(R.id.textView);
 
