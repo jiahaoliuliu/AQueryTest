@@ -14,5 +14,10 @@
             android:layout_height="wrap_content"
             android:text="Async"
             android:id="@+id/asyncButton" android:layout_gravity="center_horizontal"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Async Gson"
+            android:id="@+id/asyncGsonButton" android:layout_gravity="center_horizontal"/>
 </LinearLayout>
 

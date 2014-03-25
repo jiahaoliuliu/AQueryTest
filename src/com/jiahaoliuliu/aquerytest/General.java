@@ -9,6 +9,7 @@ import android.widget.Button;
 public class General extends Activity {
 
     private Button asyncButton;
+    private Button asyncGsonButton;
 
     /**
      * Called when the activity is first created.
@@ -20,6 +21,9 @@ public class General extends Activity {
 
         asyncButton = (Button)findViewById(R.id.asyncButton);
         asyncButton.setOnClickListener(onClickListener);
+
+        asyncGsonButton = (Button)findViewById(R.id.asyncGsonButton);
+        asyncGsonButton.setOnClickListener(onClickListener);
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -29,6 +33,10 @@ public class General extends Activity {
                 case R.id.asyncButton:
                     Intent startAsyncActivityIntent = new Intent(General.this, SampleAsync.class);
                     startActivity(startAsyncActivityIntent);
+                    break;
+                case R.id.asyncGsonButton:
+                    Intent startAsyncGsonActivityIntent = new Intent(General.this, SampleAsyncWithCustomType.class);
+                    startActivity(startAsyncGsonActivityIntent);
                     break;
             }
         }
