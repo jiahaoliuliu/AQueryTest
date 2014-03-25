@@ -12,6 +12,6 @@ public class AQueryTest extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        
+
     }
 }
